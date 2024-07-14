@@ -18,11 +18,11 @@ const About = () => {
                     transition={{ type: "spring", stiffness: 200 }}>
             About Me
           </motion.div>
-          <div className="mt-2 text-center lg:mt-5 px-4 font-mono font-extralight md:font-medium text-sm md:text-lg text-slate-400 pb-3 tracking-normal md:tracking-wide">Hey, I'm Aditya! a 19-year-old full-stack developer from India. I love working with MERN Stack and Flutter but trust me, there's more to it. I'm super into open-source projects and always up for connecting and collaborating. Ready to dive in and turn cool ideas into reality!</div>
+          <div className="mt-2 text-center lg:mt-5 px-4 font-mono font-extralight md:font-medium text-sm md:text-lg text-slate-400 pb-3 tracking-normal md:tracking-wide">Hey, I'm Aditya! A 19-year-old full-stack developer from India. I love working with MERN Stack and Flutter but trust me, there's more to it. I'm super into open-source projects and always up for connecting and collaborating. Ready to dive in and turn cool ideas into reality!</div>
       </div>
     </div>
     {/* //skills */}
-     <div className="mt-7 md:mt-14 flex flex-col justify-center px-4 items-center">
+     <div className="mt-7 md:mt-14 flex flex-col justify-center px-10 items-center">
       <motion.div className="mb-3 md:mb-6 font-tiny5 text-2xl md:text-4xl font-bold cursor-pointer text-slate-200" initial={{ scale: 1 }}
                     whileHover={{ scale: 1.1 }} 
                     transition={{ type: "spring", stiffness: 200 }}>Tech Stack</motion.div>
