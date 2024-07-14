@@ -34,7 +34,7 @@ const About = () => {
         </motion.div>
       </div>
       {/* Skills */}
-      <div className="mt-7 md:mt-14 flex flex-col justify-center px-6 items-center">
+      <div className="mt-7 md:mt-14 flex flex-col justify-center px-5 items-center">
         <div className="mb-3 md:mb-6 font-tiny5 text-2xl md:text-4xl font-bold text-slate-200">Tech Stack</div>
         <div className="flex flex-wrap my-1 md:my-2 justify-center items-center gap-3 md:gap-6">
           <Box5 text={"Java"} img={<RiJavaLine />} />
