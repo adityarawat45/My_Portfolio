@@ -85,14 +85,16 @@ const Hero = () => {
               <FaXTwitter />
             </motion.div>
           </a>
-          <button className="hidden md:block rounded-2xl text-lg border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+          <a href='/Aditya_CV.pdf' download={"Aditya_CV.pdf"} className='hidden md:block '><button className=" rounded-2xl text-lg border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
             Resume
-          </button>
+          </button></a>
         </div>
         <div className="flex justify-center mt-4 items-center">
-          <button className=" block text-base md:hidden lg:hidden rounded-2xl border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+          <a href='/Aditya_CV.pdf' download={"Aditya_CV.pdf"} className='block text-base md:hidden lg:hidden '>
+          <button className=" rounded-2xl border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
             Resume
           </button>
+          </a>
         </div>
       </div>
       <div className="flex justify-center items-center">
