@@ -22,7 +22,7 @@ const About = () => {
           whileHover={{scale:1.05}}
           whileTap={{scale: 1.05}}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
-          transition={{ duration: 0.7, bounce: 0.5, type: 'spring' }}
+          transition={{ duration: 0.7, bounce: 0.3, type: 'spring' }}
           className="flex flex-col justify-center mt-2 w-full md:w-3/6 border-b-8 border-r-4 border-l-2 border-t-2 border-l-sky-400 border-t-sky-400 rounded-b-xl rounded-t-xl border-slate-600 bg-slate-800 items-center">
           <div className="text-2xl md:text-4xl font-tiny5 mt-2 md:mt-5 font-bold text-slate-200">
             About Me
@@ -35,7 +35,8 @@ const About = () => {
       {/* Skills */}
       <div className="mt-7 md:mt-14 flex flex-col justify-center px-4 items-center">
         <div className="mb-3 md:mb-6 font-tiny5 text-2xl md:text-4xl font-bold text-slate-200">Tech Stack</div>
-        <div className="flex flex-wrap my-1 md:my-2 justify-center items-center gap-3 md:gap-6">
+        <div  
+         className="flex flex-wrap my-1 md:my-2 justify-center items-center gap-3 md:gap-6">
           <Box5 text={"Java"} img={<RiJavaLine />} />
           <Box5 img={<BiLogoTypescript />} text={"Typescript"} />
           <Box5 img={<BiLogoJavascript />} text={"Javascript"} />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion ,useInView} from 'framer-motion';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import prof from '../images/prof.png';
@@ -37,6 +37,7 @@ const Hero = () => {
   }, [charIndex, isDeleting, isEnglish]);
   
   return (
+
     <div className='md:grid md:grid-cols-2'>
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
         <div className="relative">
@@ -53,7 +54,7 @@ const Hero = () => {
         </div>
         <div className=' md:hidden lg:hidden flex flex-row justify-center mt-5 mb-3'>
           <img src={prof}
-      className="cursor:pointer mt-3 focus:animate-tilt size-28 rounded-full cursor-pointer"></img>
+      className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-full cursor-pointer"></img>
         </div>
         <div className="flex  md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
