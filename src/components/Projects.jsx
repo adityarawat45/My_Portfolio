@@ -16,7 +16,7 @@ const Projects = () => {
           {/* All Projects */}
           <ProjectCard title={"Blog Nest"} desc={"A modern, sleek blogging platform based on serverless architecture, designed to turn your thoughts into captivating posts effortlessly."} link={"https://blognest-beta.vercel.app/"} stack={"Typescript, React, Hono, Prisma, Cloudflare, Postgresql, Tailwindcss, Recoil"} icon={<FaGlobe />} ></ProjectCard>
           <ProjectCard title={"SMS-MMDU"} desc={"A cross-platform SMS app designed for MMDU, enabling smooth operations between students and management."} link={"https://github.com/adityarawat45/Student-Management-System.git"} stack={"Dart, Flutter, VelocityX, Firebase Auth, Cloud Firestore"} icon={<FaCode />} ></ProjectCard>
-          <ProjectCard title={"My Portfolio"} desc={"Meticulously crafted to reflect my journey as a developer, offering visitors a glimpse into my development style and capabilities."} link={"https://adityadev-beta.vercel.app/"} stack={"Javascript, React, Tailwindcss, Framer Motion"} icon={<FaGlobe />} ></ProjectCard>
+          <ProjectCard title={"My Portfolio"} desc={"Meticulously crafted to reflect my journey as a developer, offering visitors a glimpse into my development style and capabilities."} link={"https://devxaditya.vercel.app/"} stack={"Javascript, React, Tailwindcss, Framer Motion"} icon={<FaGlobe />} ></ProjectCard>
           <ProjectCard title={"AI Chat Assitant"} desc={"AI chat assistant leveraging OpenAI's capabilities to provide insightful responses with ability to generate stunnin images with Dall-E"} link={"https://github.com/adityarawat45/Virtual_Chat_Assistant.git"} stack={"Dart, Flutter, OpenAi api, Dall-E"} icon={<FaCode />} ></ProjectCard>
       </div>
     </div>
