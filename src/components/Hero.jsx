@@ -52,8 +52,8 @@ const Hero = () => {
           Crafts <span className="text-rose-600">bugs </span> into <span className="text-green-500">features.</span>
         </div>
         <div className=' md:hidden lg:hidden flex flex-row justify-center mt-5 mb-3'>
-          <img  src={prof}
-      className="hover:animate-tilt focus:animate-tilt size-20 rounded-full cursor-pointer"></img>
+          <img src={prof}
+      className="cursor:pointer mt-3 focus:animate-tilt size-20 rounded-full cursor-pointer"></img>
         </div>
         <div className="flex  md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
