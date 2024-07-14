@@ -20,8 +20,8 @@ module.exports = {
           '50%': { opacity: '0' },
         },
         tilt: {
-          '0%, 100%': { transform: 'rotate(12deg)' },
-          '50%': { transform: 'rotate(-12deg)' },
+          '0%, 100%': { transform: 'rotate(6deg)' },
+          '50%': { transform: 'rotate(-6deg)' },
         },
 
       },

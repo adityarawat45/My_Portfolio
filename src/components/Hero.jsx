@@ -35,7 +35,7 @@ const Hero = () => {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, isEnglish]);
-
+  
   return (
     <div className='md:grid md:grid-cols-2'>
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
@@ -46,15 +46,16 @@ const Hero = () => {
         </div>
         <div className=''></div>
         <div className="md:ml-20 mx-2 my-2 text-lg md:text-2xl font-mono text-slate-300 md:pb-5 font-bold">
-          Lazy Full-Stack Dev.
+          A lazy Full-Stack Dev.
         </div>
         <div className=" md:ml-20 mx-2 md:text-2xl text-lg font-mono text-slate-300 font-bold ">
-          Converts <span className="text-amber-400">ideas</span> into <span className="text-green-700">code.</span>
+          Crafts <span className="text-rose-600">bugs </span> into <span className="text-green-500">features.</span>
         </div>
-        <div className='vlock md:hidden lg:hidden flex flex-row justify-center my-3'>
-          <img className='size-20 rounded-full hover:animate-spin cursor-pointer' src={prof}></img>
+        <div className=' md:hidden lg:hidden flex flex-row justify-center mt-5 mb-3'>
+          <img  src={prof}
+      className="hover:animate-tilt focus:animate-tilt size-20 rounded-full cursor-pointer"></img>
         </div>
-        <div className="flex  md:ml-20 mt-5 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
+        <div className="flex  md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
@@ -91,7 +92,7 @@ const Hero = () => {
         </div>
         <div className="flex justify-center mt-4 items-center">
           <a href='/Aditya_CV.pdf' download={"Aditya_CV.pdf"} className='block text-base md:hidden lg:hidden '>
-          <button className=" rounded-2xl border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+          <button className=" rounded-2xl border-2 mt-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
             Resume
           </button>
           </a>
@@ -99,7 +100,11 @@ const Hero = () => {
       </div>
       <div className="flex justify-center items-center">
         <div className="hidden md:block">
-          <img className="md:w-56 lg:w-64 border-l-2 border-b-2 border-t-2 border-r-2 border-solid border-stone-600 rounded-full" src={prof} alt="Aditya" />
+          <motion.img 
+           initial={{ y: 0 }}
+      whileInView={{ y: [0, -6, 0] }} 
+      transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }}
+          className="md:w-56 lg:w-64 border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-full" src={prof} alt="Aditya" />
         </div>
       </div>
     </div> 
@@ -107,3 +112,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
