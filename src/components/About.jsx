@@ -22,7 +22,7 @@ const About = () => {
       </div>
     </div>
     {/* //skills */}
-     <div className="mt-7 md:mt-14 flex flex-col justify-center px-10 items-center">
+     <div className="mt-7 md:mt-14 flex flex-col justify-center px-7 items-center">
       <motion.div className="mb-3 md:mb-6 font-tiny5 text-2xl md:text-4xl font-bold cursor-pointer text-slate-200" initial={{ scale: 1 }}
                     whileHover={{ scale: 1.1 }} 
                     transition={{ type: "spring", stiffness: 200 }}>Tech Stack</motion.div>
