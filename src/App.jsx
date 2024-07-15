@@ -15,9 +15,9 @@ function App() {
     <div className="container mx-auto">
     <div className="hidden md:block lg:block"><Nav></Nav></div>
     <div className="block md:hidden lg:hidden"><SmallNav></SmallNav></div>
-    <a href="#Hero"><Hero></Hero></a>
-    <a href="#About"><About></About></a>
-    <href href="#Work"></href><Work></Work>
+    <Hero></Hero>
+    <About></About>
+    <Work></Work>
     <Projects></Projects>
     <Footer></Footer>
     </div>
