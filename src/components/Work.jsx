@@ -23,7 +23,7 @@ const Work = () => {
         <div>
         <div className="text-xl md:text-4xl font-mono mt-4 md:mt-5 ml-4 md:ml-5  text-left font-bold text-fuchsia-400">MERN-Stack Trainee</div>
         <div className="text-base md:text-2xl font-mono ml-4 md:ml-5 text-left font-semibold text-green-400 flex items-center space-x-1">
-  <span>Techlive</span>5
+  <span>Techlive</span>
   <span>&bull;</span>
   <span>Remote</span>
 </div>
