@@ -42,11 +42,10 @@ const Hero = () => {
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
         <div className="relative">
           <h1 className="hidden md:block text-6xl  mx-2 mt-5  text-slate-300 pb-2 md:ml-20 font-bold">{`I'm ${name}`}<span className="ccursor animate-blink font-thin">|</span></h1>
-          <h1 className="block md:hidden lg:hidden text-6xl md:text-7xl mx-2 mt-5  text-slate-300 pb-2 md:ml-20 font-bold">{`I'm`}</h1>
-          <h1 className='block md:hidden lg:hidden text-6xl md:text-7xl mx-2   text-slate-300 pb-2 md:ml-20 font-bold'>{name}<span className="cursor  animate-blink font-thin">|</span></h1>
+          <h1 className="block md:hidden lg:hidden text-6xl md:text-7xl mx-2 mt-5  text-slate-300  md:ml-20 font-bold">{`I'm`}</h1>
+          <h1 className='block md:hidden lg:hidden text-6xl md:text-7xl mx-2 text-slate-300 md:ml-20 font-bold'>{name}<span className="cursor  animate-blink font-thin">|</span></h1>
         </div>
-        <div className=''></div>
-        <div className="md:ml-20 mx-2 my-2 text-lg md:text-2xl font-mono text-slate-300 md:pb-5 font-bold">
+        <div className="md:ml-20 mx-2 mt-5 md:mt-7 text-lg md:text-2xl font-mono text-slate-300  font-bold">
           A lazy Full-Stack Dev.
         </div>
         <div className=" md:ml-20 mx-2 md:text-2xl text-lg font-mono text-slate-300 font-bold ">
