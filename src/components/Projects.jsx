@@ -27,7 +27,7 @@ const Projects = () => {
         />
         <ProjectCard 
           title="My Portfolio" 
-          desc="Meticulously crafted to reflect my journey as a developer, offering visitors a glimpse into my development style and capabilities." 
+          desc="A Meticulously crafted Portfolio by me to reflect my journey as a developer, offering visitors a glimpse into my development style and capabilities." 
           link="https://devxaditya.vercel.app/" 
           stack="Javascript, React, Tailwindcss, Framer Motion" 
           icon={<FaGlobe />} 
