@@ -34,9 +34,9 @@ const Projects = () => {
         />
         <ProjectCard 
           title="Drizzle" 
-          desc="Drizzle is a chat app, that embodies a minimalist aesthetic, perfect for users who appreciate clean and uncluttered interfaces." 
+          desc="Drizzle is the most complete chat app with a minimal and aesthetic UI, designed to provide a seamless and visually pleasing communication experience. " 
           link="https://github.com/adityarawat45/Drizzle_ChatApp.git" 
-          stack="Dart, Flutter, Firebase Auth, Cloud Firstore" 
+          stack="Dart, Flutter, Firebase Auth, Cloud Firestore" 
           icon={<FaCode />} 
         />
       </div>

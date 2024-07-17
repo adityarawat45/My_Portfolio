@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 import {IoMail} from "react-icons/io5"
 import {FaGithubSquare,FaEnvelope} from "react-icons/fa"
 import { FaSquareXTwitter,FaLinkedin} from "react-icons/fa6"
-  m
+  
 const Footer = () => {
   return (<footer className='px-4 md:px-24'>
      <div className='border-t border-slate-700'>

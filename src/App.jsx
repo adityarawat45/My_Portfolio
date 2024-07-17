@@ -8,7 +8,7 @@ import Projects from "./components/Projects"
 
 
 function App() {
-  return  <div className="overflow-x-hidden overflow-y-hidden text-neutral-300 antialiased  slec selction:bg-gray-400 selection:text-bg-gray" >
+  return <div className="overflow-x-hidden overflow-y-hidden text-neutral-300 antialiased  slec selction:bg-gray-400 selection:text-bg-gray" >
     <div className="fixed top-0 -z-10 h-full w-full">
     <div class="absolute top-0 z-[-2] h-screen w-screen bg-slate-900"></div>
     </div>
@@ -16,10 +16,10 @@ function App() {
     <div className="hidden md:block lg:block"><Nav></Nav></div>
     <div className="block md:hidden lg:hidden"><SmallNav></SmallNav></div>
     <Hero></Hero>
-    <About></About>
+     <About></About>
     <Work></Work>
     <Projects></Projects>
-    <Footer></Footer>
+    <Footer></Footer> 
     </div>
   </div>
 
