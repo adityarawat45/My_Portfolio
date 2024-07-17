@@ -33,10 +33,10 @@ const Projects = () => {
           icon={<FaGlobe />} 
         />
         <ProjectCard 
-          title="AI Chat Assistant" 
-          desc="AI chat assistant leveraging OpenAI's capabilities to provide insightful responses with ability to generate stunning images with Dall-E." 
-          link="https://github.com/adityarawat45/Virtual_Chat_Assistant.git" 
-          stack="Dart, Flutter, OpenAi API, Dall-E" 
+          title="Drizzle" 
+          desc="Drizzle is a chat app, that embodies a minimalist aesthetic, perfect for users who appreciate clean and uncluttered interfaces." 
+          link="https://github.com/adityarawat45/Drizzle_ChatApp.git" 
+          stack="Dart, Flutter, Firebase Auth, Cloud Firstore" 
           icon={<FaCode />} 
         />
       </div>
