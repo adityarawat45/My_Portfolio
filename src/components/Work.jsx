@@ -27,7 +27,7 @@ const Work = () => {
   <span>&bull;</span>
   <span>Remote</span>
 </div>
-        <div className='block md:hidden lg:hidden  text-left ml-4 text-xs mx-2 font-mono font-semibold text-amber-400'>June, 2024 - Current</div>
+        <div className='block md:hidden lg:hidden  text-left ml-4 text-xs mx-2 font-mono font-semibold text-amber-400'>June, 2024 - Aug, 2024</div>
         </div>
         <div className='hidden md:block text-right mr-5 font-mono font-semibold text-amber-400'>June, 2024 - Current</div>
         </div>
