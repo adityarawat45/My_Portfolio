@@ -29,7 +29,7 @@ const Work = () => {
 </div>
         <div className='block md:hidden lg:hidden  text-left ml-4 text-xs mx-2 font-mono font-semibold text-amber-400'>June, 2024 - Aug, 2024</div>
         </div>
-        <div className='hidden md:block text-right mr-5 font-mono font-semibold text-amber-400'>June, 2024 - Current</div>
+        <div className='hidden md:block text-right mr-5 font-mono font-semibold text-amber-400'>June, 2024 - Aug, 2024</div>
         </div>
         <div className="mt-2 text-left lg:mt-5 px-4 font-mono font-medium text-sm md:text-base text-slate-400 pb-3 tracking-wide md:tracking-wider">&bull;<span className="mr-2"/>Worked on a variety of web development projects using the MERN stack. <br/>&bull;<span className="mr-2"/>Learned about building dynamic and responsive web applications. <br/>&bull;<span className="mr-2"/>Gained practical experience and sharpened coding skills through hands-on projects and exercises.</div>
          </motion.div>
