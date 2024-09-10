@@ -9,7 +9,7 @@ import Projects from "./components/Projects"
 <div class=""></div>
 function App() {
   return <div className="overflow-x-hidden overflow-y-hidden text-neutral-300 antialiased  slec selction:bg-gray-400 selection:text-bg-gray" >
-    <div className="fixed top-0 -z-10 h-full w-full"><div class="relative h-full w-full bg-slate-950"><div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-slate-800"></div></div>
+    <div className="fixed top-0 -z-10 h-full w-full"><div class="relative h-full w-full bg-slate-950"><div class="absolute h-full w-full inset-0 bg-gradient-to-t from-slate-950 to-slate-800"></div></div>
     </div>
     <div className="hidden md:block lg:block mb-32"><Nav></Nav></div>
     <div className="block md:hidden lg:hidden mb-20"><SmallNav></SmallNav></div>
