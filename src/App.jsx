@@ -10,7 +10,7 @@ import Projects from "./components/Projects"
 function App() {
   return <div className="overflow-x-hidden overflow-y-hidden text-neutral-300 antialiased  slec selction:bg-gray-400 selection:text-bg-gray" >
     <div className="fixed top-0 -z-20 h-screen w-full">
-      <div className="fixed h-screen w-screen inset-0 bg-gradient-to-t from-slate-950 to-slate-800"></div>
+      <div className="h-screen w-screen inset-0 bg-gradient-to-t from-slate-950 to-slate-800"></div>
     </div>
     <div className="hidden md:block lg:block mb-32"><Nav></Nav></div>
     <div className="block md:hidden lg:hidden mb-20"><SmallNav></SmallNav></div>
