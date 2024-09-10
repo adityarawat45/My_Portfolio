@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react";
 
 export const Nav = () => {
         return (
-        <div className="w-full mb-20  flex justify-around items-center">
-            <nav className="w-3/6 flex border-r-4 border-b-4 bg-slate-950 bg-opacity-30 rounded-b-xl border-slate-700 items-center justify-between py-2">
+        <div className="fixed z-10 w-full mb-20 flex justify-around items-center">
+            <nav className=" w-3/6 flex border-r-4 border-b-4 bg-slate-950 backdrop-blur-sm bg-opacity-30 rounded-b-xl border-slate-700 items-center justify-between py-2">
             <motion.div
                     className="font-tiny5 flex ml-6 cursor-pointer text-slate-300 justify-start text-5xl font-bold items-center"
                     initial={{ scale: 1 }}
