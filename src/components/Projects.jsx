@@ -53,9 +53,10 @@ const ProjectCard = ({ title, desc, link, icon, stack }) => {
       ref={ref}
       initial={{ opacity: 0, y: 0, scale: 0.8 }} 
       whileTap={{ scale: 1.05 }}
+      whileHover={{ scale: 1.05 }}
       animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
       transition={{ duration: 0.7, bounce: 0.4, type: 'spring' }}
-      className="flex shadow-xl flex-col justify-between cursor-pointer p-4 mx-2 my-2 md:my-4 md:mx-4 border-2 w-full md:w-2/5 border-slate-500 rounded-lg bg-slate-800 text-white"
+      className="flex flex-col justify-between cursor-pointer p-4 mx-2 my-2 md:my-4 md:mx-4 border-2 w-full md:w-2/5 border-slate-500 rounded-lg bg-slate-800 text-white"
     >
       <div className="flex justify-between items-center">
         <div className="text-xl md:text-2xl font-bold font-mono text-fuchsia-400">{title}</div>
