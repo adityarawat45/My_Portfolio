@@ -23,7 +23,7 @@ const About = () => {
           whileTap={{scale: 1.05}}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
           transition={{ duration: 0.7, bounce: 0.3, type: 'spring' }}
-          className="flex flex-col justify-center mt-2 w-full md:w-3/6 border-b-8 border-r-4 border-l-2 border-t-2 border-l-sky-400 border-t-sky-400 rounded-b-xl rounded-t-xl border-slate-600 bg-slate-800 items-center">
+          className="flex flex-col justify-center mt-2 w-full md:w-3/6 border-b-2 border-r-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-800 items-center">
           <div className="text-2xl md:text-4xl font-tiny5 mt-2 md:mt-5 font-bold text-slate-200">
             About Me
           </div>

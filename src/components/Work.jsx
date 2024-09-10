@@ -27,7 +27,7 @@ const WorkTemplate = ({profile,org,Location,start,end,pointOne,pointTwo,pointThr
       whileTap={{scale: 1.05}}
       animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
       transition={{ duration: 0.7, bounce: 0.3, type: 'spring' }}
-     className="flex flex-col justify-center w-full cursor-pointer md:w-3/4 border-r-4 border-b-8  border-l-2 border-t-2 border-l-sky-400 border-t-sky-400  rounded-b-xl rounded-t-xl border-slate-600 bg-slate-800 ">
+     className="flex shadow-xl flex-col justify-center w-full cursor-pointer md:w-3/4 border-r-2 border-b-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-800 ">
     <div className='flex flex-row justify-between items-end'>
     <div>
     <div className="text-xl md:text-4xl font-mono mt-4 md:mt-5 ml-4 md:ml-5  text-left font-bold text-fuchsia-400">{profile}</div>
