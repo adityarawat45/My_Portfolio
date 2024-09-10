@@ -12,7 +12,7 @@ function App() {
     <div className="fixed top-0 -z-10 h-full w-full">
     <div class="absolute top-0 z-[-2] h-screen w-screen bg-slate-900"></div>
     </div>
-    <div className="hidden md:block lg:block mb-20"><Nav></Nav></div>
+    <div className="hidden md:block lg:block mb-32"><Nav></Nav></div>
     <div className="block md:hidden lg:hidden mb-20"><SmallNav></SmallNav></div>
     <Hero></Hero>
      <About></About>
