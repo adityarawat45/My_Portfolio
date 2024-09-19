@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export const SmallNav = () => {
     return (
-        <div className="w-full fixed z-10 bg-slate-950  bg-opacity-30 border-b-2 flex border-slate-700   justify-center items-center">
-            <nav className="w-full flex items-center backdrop-blur-sm justify-between text-slate-300 px-3 py-2">
+        <div className="w-screen fixed z-10 bg-slate-950  bg-opacity-30 border-b-2 border-r-2 border-l-2 mx-1 mr-1 rounded-b-xl flex border-slate-700 justify-center items-center">
+            <nav className="w-full flex items-center backdrop-blur-sm  justify-between text-slate-300 px-3 py-2">
                 <motion.div
                     className="font-tiny5 flex cursor-pointer justify-start text-3xl font-bold items-center"
                     initial={{ scale: 1 }}
