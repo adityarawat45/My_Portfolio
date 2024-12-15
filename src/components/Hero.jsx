@@ -41,21 +41,21 @@ const Hero = () => {
     <div className='md:grid md:grid-cols-2'>
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
         <div className="relative">
-          <h1 className="hidden md:block text-6xl md:text-8xl  mx-2 mt-5 text-slate-300 pb-2 md:ml-20 font-bold">{`I'm ${name}`}<span className="ccursor animate-blink font-thin">|</span></h1>
-          <h1 className="block md:hidden lg:hidden text-6xl md:text-8xl mx-2 mt-5  text-slate-300  md:ml-20 font-bold">{`I'm`}</h1>
-          <h1 className='block md:hidden lg:hidden text-6xl md:text-8xl mx-2 text-slate-300 md:ml-20 font-bold'>{name}<span className="cursor  animate-blink font-thin">|</span></h1>
+          <h1 className="hidden md:block text-6xl md:text-8xl  mx-2 mt-5 text-green-100 pb-2 md:ml-20 font-bold">{`I'm ${name}`}<span className="cursor animate-blink font-thin">|</span></h1>
+          <h1 className="block md:hidden lg:hidden text-6xl md:text-8xl mx-2 mt-5  green-100  md:ml-20 font-bold">{`I'm`}</h1>
+          <h1 className='block md:hidden lg:hidden text-6xl md:text-8xl mx-2 text-green-100 md:ml-20 font-bold'>{name}<span className="cursor  animate-blink font-thin">|</span></h1>
         </div>
-        <div className="md:ml-20 mx-2 mt-5 md:mt-7 text-lg md:text-3xl font-mono text-slate-300 font-bold">
+        <div className="md:ml-20 mx-2 mt-5 md:mt-7 text-lg md:text-3xl font-mono text-fuchsia-500 font-bold">
           A lazy Full-Stack Dev.
         </div>
-        <div className=" md:ml-20 mx-2 md:text-3xl text-lg font-mono text-slate-300 font-bold ">
+        <div className=" md:ml-20 mx-2 md:text-3xl text-lg font-mono text-fuchsia-500 font-bold ">
           Crafts <span className="text-rose-600">bugs </span> into <span className="text-green-500">features.</span>
         </div>
         <div className=' md:hidden lg:hidden flex flex-row justify-center mt-5 mb-3'>
           <img src={prof}
       className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-full cursor-pointer"></img>
         </div>
-        <div className="flex md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
+        <div className="flex md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-fuchsia-500 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
@@ -86,13 +86,13 @@ const Hero = () => {
               <FaXTwitter />
             </motion.div>
           </a>
-          <a href='/Aditya_CV.pdf' download={"Aditya_CV.pdf"} className='hidden md:block '><button className=" rounded-2xl text-lg border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+          <a href='/Aditya_CV.pdf' download={"Aditya_CV.pdf"} className='hidden md:block '><button className=" rounded-2xl text-lg border-2 mb-2 border-dashed border-gray-900 bg-green-200 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(229,0,225)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
             Resume
           </button></a>
         </div>
         <div className="flex justify-center mt-4 items-center">
           <a href='/Aditya_CV.pdf' download={"Aditya_CV.pdf"} className='block text-base md:hidden lg:hidden '>
-          <button className=" rounded-2xl border-2 mt-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+          <button className=" rounded-2xl border-2 mt-2 border-dashed border-green-900 bg-green-100 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(229,0,225)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
             Resume
           </button>
           </a>

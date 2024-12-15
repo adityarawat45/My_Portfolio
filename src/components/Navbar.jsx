@@ -5,16 +5,19 @@ import { useEffect, useRef } from "react";
 export const Nav = () => {
         return (
         <div className="fixed z-10 w-full mb-20 flex justify-around items-center">
-            <nav className=" w-3/6 flex border-r-4 border-b-4 bg-slate-950 backdrop-blur-sm bg-opacity-30 rounded-b-xl border-emerald-800 items-center justify-between py-2">
+            <motion.nav className=" w-3/6 cursor-pointer flex border-2 bg-emerald-950 backdrop-blur-sm bg-opacity-30 mt-5 rounded-xl border-green-500 items-center justify-between py-2"
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 0.9 }} 
+            transition={{ type: "spring", stiffness: 200 }}>
             <motion.div
-                    className="font-tiny5 flex ml-6 cursor-pointer text-slate-300 justify-start text-5xl font-bold items-center"
+                    className="font-tiny5 flex ml-6 cursor-pointer text-green-50 justify-start text-5xl font-bold items-center"
                     initial={{ scale: 1 }}
                     whileHover={{ scale: 1.1 }} 
                     transition={{ type: "stiffness", stiffness: 200 }}
                 >
                     AR
                 </motion.div>
-               <div className="flex items-center  justify-end text-slate-300 gap-8 text-2xl mx-7">
+               <div className="flex items-center  justify-end text-green-50 gap-8 text-2xl mx-7">
                     <a href="https://www.linkedin.com/in/aditya-rawat-231511249"><motion.div initial={{ scale: 1 }}
                     whileHover={{ scale: 1.1}} 
                     transition={{ type: "spring", stiffness: 200 }}><FaLinkedin /></motion.div></a>
@@ -26,7 +29,7 @@ export const Nav = () => {
                     transition={{ type: "spring", stiffness: 200 }}><FaSquareXTwitter /></motion.div></a>
                  
                 </div>
-           </nav>
+           </motion.nav>
             </div>
         );
       };
