@@ -10,7 +10,7 @@ export const Nav = () => {
                     className="font-tiny5 flex ml-6 cursor-pointer text-slate-300 justify-start text-5xl font-bold items-center"
                     initial={{ scale: 1 }}
                     whileHover={{ scale: 1.1 }} 
-                    transition={{ type: "spring", stiffness: 200 }}
+                    transition={{ type: "stiffness", stiffness: 200 }}
                 >
                     AR
                 </motion.div>

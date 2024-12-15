@@ -41,27 +41,27 @@ const Hero = () => {
     <div className='md:grid md:grid-cols-2'>
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
         <div className="relative">
-          <h1 className="hidden md:block text-6xl  mx-2 mt-5  text-slate-300 pb-2 md:ml-20 font-bold">{`I'm ${name}`}<span className="ccursor animate-blink font-thin">|</span></h1>
-          <h1 className="block md:hidden lg:hidden text-6xl md:text-7xl mx-2 mt-5  text-slate-300  md:ml-20 font-bold">{`I'm`}</h1>
-          <h1 className='block md:hidden lg:hidden text-6xl md:text-7xl mx-2 text-slate-300 md:ml-20 font-bold'>{name}<span className="cursor  animate-blink font-thin">|</span></h1>
+          <h1 className="hidden md:block text-6xl md:text-8xl  mx-2 mt-5 text-slate-300 pb-2 md:ml-20 font-bold">{`I'm ${name}`}<span className="ccursor animate-blink font-thin">|</span></h1>
+          <h1 className="block md:hidden lg:hidden text-6xl md:text-8xl mx-2 mt-5  text-slate-300  md:ml-20 font-bold">{`I'm`}</h1>
+          <h1 className='block md:hidden lg:hidden text-6xl md:text-8xl mx-2 text-slate-300 md:ml-20 font-bold'>{name}<span className="cursor  animate-blink font-thin">|</span></h1>
         </div>
-        <div className="md:ml-20 mx-2 mt-5 md:mt-7 text-lg md:text-2xl font-mono text-slate-300  font-bold">
+        <div className="md:ml-20 mx-2 mt-5 md:mt-7 text-lg md:text-3xl font-mono text-slate-300 font-bold">
           A lazy Full-Stack Dev.
         </div>
-        <div className=" md:ml-20 mx-2 md:text-2xl text-lg font-mono text-slate-300 font-bold ">
+        <div className=" md:ml-20 mx-2 md:text-3xl text-lg font-mono text-slate-300 font-bold ">
           Crafts <span className="text-rose-600">bugs </span> into <span className="text-green-500">features.</span>
         </div>
         <div className=' md:hidden lg:hidden flex flex-row justify-center mt-5 mb-3'>
           <img src={prof}
       className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-full cursor-pointer"></img>
         </div>
-        <div className="flex  md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
+        <div className="flex md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
-              initial={{ scale: 1 }}
-              whileHover={{ scale: 1.1 }} 
-              transition={{ type: "spring", stiffness: 200 }}
+              initial={{ scale: 1.1 }}
+              whileHover={{ scale: 0.9}} 
+              transition={{ type: "stiffness", stiffness: 200 }}
             >
               <FiLinkedin />
             </motion.div>
@@ -69,9 +69,9 @@ const Hero = () => {
           <a href="https://github.com/adityarawat45">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
-              initial={{ scale: 1 }}
-              whileHover={{ scale: 1.1 }} 
-              transition={{ type: "spring", stiffness: 200 }}
+              initial={{ scale: 1.1 }}
+              whileHover={{ scale: 0.9 }} 
+              transition={{ type: "stiffness", stiffness: 200 }}
             >
               <FiGithub />
             </motion.div>
@@ -79,9 +79,9 @@ const Hero = () => {
           <a href="https://x.com/adityarawat45?">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
-              initial={{ scale: 1 }}
-              whileHover={{ scale: 1.1 }} 
-              transition={{ type: "spring", stiffness: 200 }}
+              initial={{ scale: 1.1 }}
+              whileHover={{ scale: 0.9}} 
+              transition={{ type: "stiffness", stiffness: 200 }}
             >
               <FaXTwitter />
             </motion.div>
@@ -104,7 +104,7 @@ const Hero = () => {
            initial={{ y: 0 }}
       whileInView={{ y: [0, -6, 0] }} 
       transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }}
-          className="md:w-56 lg:w-64 border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-full" src={prof} alt="Aditya" />
+          className="border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-full size-96" src={prof} alt="Aditya" />
         </div>
       </div>
     </div> 

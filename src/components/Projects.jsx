@@ -51,9 +51,9 @@ const ProjectCard = ({ title, desc, link, icon, stack }) => {
   return (
     <motion.div 
       ref={ref}
-      initial={{ opacity: 0, y: 0, scale: 0.8 }} 
-      whileTap={{ scale: 1.05 }}
-      whileHover={{ scale: 1.05 }}
+      initial={{ opacity: 0, y: 0, scale: 1.1 }} 
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 0.95 }}
       animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
       transition={{ duration: 0.7, bounce: 0.4, type: 'spring' }}
       className="flex flex-col justify-between cursor-pointer p-4 mx-2 my-2 md:my-4 md:mx-4 border-2 w-full md:w-2/5 border-slate-500 rounded-lg bg-slate-800 text-white"
