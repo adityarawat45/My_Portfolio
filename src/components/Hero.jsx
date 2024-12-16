@@ -100,11 +100,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center items-center">
         <div className="hidden md:block">
-          <motion.img 
-           initial={{ y: 0 }}
-      whileInView={{ y: [0, -6, 0] }} 
-      transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }}
-          className="border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-full size-96" src={prof} alt="Aditya" />
+          <img className="border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-full size-96" src={prof} alt="Aditya" />
         </div>
       </div>
     </div> 
