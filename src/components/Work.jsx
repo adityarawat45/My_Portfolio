@@ -22,11 +22,11 @@ const WorkTemplate = ({profile,org,Location,start,end,pointOne,pointTwo,pointThr
   return (
     <div className='flex flex-row justify-center my-5 items-center'>
     <motion.div ref={ref}
-      initial={{ opacity: 0, y: 0, scale: 0.8 }} 
-      whileHover={{scale:1.05}}
-      whileTap={{scale: 1.05}}
+      initial={{ opacity: 0, y: 0, scale: 0.5 }} 
+      whileTap={{ scale: 0.9}}
+      // whileHover={{ scale: 1.1 }}
       animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
-      transition={{ duration: 0.7, bounce: 0.3, type: 'spring' }}
+      transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
      className="flex shadow-xl flex-col justify-center w-full backdrop-blur-lg cursor-pointer md:w-3/4 border-r-2 border-b-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-800 ">
     <div className='flex flex-row justify-between items-end'>
     <div>
