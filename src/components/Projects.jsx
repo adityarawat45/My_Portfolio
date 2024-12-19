@@ -6,7 +6,7 @@ import { FaCode } from "react-icons/fa6";
 const Projects = () => {
   return (
     <div>
-      <div className="text-2xl md:text-4xl flex justify-center items-center font-tiny5 mt-2 md:mt-5 font-bold text-slate-200">
+      <div className="text-4xl md:text-6xl flex justify-center items-center font-tiny5 md:mt-24 md:mb-8 mt-4 font-bold text-slate-200">
         Some Builds
       </div>
       <div className="flex flex-wrap px-2 md:px-20 justify-center mt-4 mb-5">

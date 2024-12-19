@@ -5,7 +5,7 @@ const Work = () => {
   return (
     <div className='flex justify-center items-center'>
         <div className='flex-col justify-center px-4 md:px-6'>
-        <div className="text-2xl md:text-4xl font-tiny5 mt-4 md:mt-8 text-center font-bold text-slate-200">Work & Exp.</div>
+        <div className="text-4xl md:text-6xl font-tiny5 md:mt-24 md:mb-8 mt-8 text-center font-bold text-slate-200">Work & Exp.</div>
         {/* Technosoft */}
         {/* {<WorkTemplate profile={"Backend Developer Intern"} Location={"Gurugram"} mode={On-Site} start={"Sept, 2024"} end={"Current"}></WorkTemplate>} */}
         {/* Techlive */}
