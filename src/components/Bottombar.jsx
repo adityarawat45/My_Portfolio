@@ -1,9 +1,11 @@
 const Bottombar = () => {
   return (
-    <div>
-        <nav>
-            
+    <div className="flex-col w-full h-screen fixed z-10">
+      <div className="px-5">
+        <nav className="bg-black rounded-xl">
+            Heyyy
         </nav>
+    </div>
     </div>
   )
 }

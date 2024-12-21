@@ -5,6 +5,7 @@ import { Nav } from "./components/Navbar"
 import { SmallNav } from "./components/SmallNav"
 import Work from "./components/Work"
 import Projects from "./components/Projects"
+import Bottombar from "./components/Bottombar"
 
 <div class=""></div>
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <div className="h-screen w-screen inset-0 bg-gradient-to-t from-slate-900 to-sky-950"></div>
     </div>
     <div className="hidden md:block lg:block mb-32"><Nav></Nav></div>
-    {/* <div className="block md:hidden lg:hidden mb-20"><SmallNav></SmallNav></div> */}
+    <div className="block md:hidden lg:hidden mb-20"><Bottombar></Bottombar></div>
     <Hero></Hero>
      <About></About>
     <Work></Work>
