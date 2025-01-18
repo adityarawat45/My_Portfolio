@@ -14,8 +14,9 @@ const About = () => {
 
   return (
     <div>
-      <div className="sm:px-2 cursor-pointer mt-12 flex justify-center md:mt-20 px-5 md:px-20">
+      <div className="sm:px-2 cursor-pointer mt-12 flex flex-col items-center justify-center md:mt-24 md:mb-8 px-5 md:px-20">
         {/* About */}
+        <div className="text-4xl md:text-6xl font-tiny5 mt-2 md:mt-5 font-bold text-slate-200">About Me</div>
         <motion.div 
           ref={ref}
           initial={{ opacity: 0, y: 0, scale: 0 }} 
@@ -23,10 +24,7 @@ const About = () => {
           whileTap={{scale: 0.9}}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
           transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
-          className="flex flex-col justify-center mt-2 w-full md:w-3/6 border-b-2 border-r-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-800 items-center">
-          <div className="text-4xl md:text-6xl font-tiny5 mt-2 md:mt-5 font-bold text-slate-200">
-            About Me
-          </div>
+          className="flex flex-col justify-center mt-10 w-full md:w-3/6 border-b-2 border-r-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-800 items-center">
           <div className="mt-2 text-center lg:mt-5 px-4 font-mono font-extralight md:font-medium text-sm md:text-lg text-slate-400 pb-3 tracking-normal md:tracking-wide">
             Hey, I'm Aditya! A 20-year-old full-stack developer from India. I love working with MERN Stack and Flutter but trust me, there's more to it. I'm super into open-source projects and always up for connecting and collaborating. Ready to dive in and turn cool ideas into reality!
           </div>
