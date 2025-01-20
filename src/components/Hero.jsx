@@ -38,7 +38,7 @@ const Hero = () => {
   
   return (
 
-    <div className='md:grid md:grid-cols-2'>
+    <div className='md:grid md:grid-cols-2 md:h-screen justify-center'>
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
         <div className="relative py-5">
           <h1 className="hidden md:block text-6xl md:text-8xl  mx-2 mt-5 text-slate-300 pb-2 md:ml-20 font-bold">{`I'm ${name}`}<span className="ccursor animate-blink font-thin">|</span></h1>
@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
         <div className=' md:hidden lg:hidden flex flex-row justify-center mt-5 mb-3'>
           <img src={prof}
-      className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-full cursor-pointer"></img>
+      className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-3xl cursor-pointer"></img>
         </div>
         <div className="flex md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
@@ -100,7 +100,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center items-center">
         <div className="hidden md:block">
-          <img className="border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-full size-96" src={prof} alt="Aditya" />
+          <img className="border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-3xl size-96" src={prof} alt="Aditya" />
         </div>
       </div>
     </div> 

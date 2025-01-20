@@ -13,8 +13,8 @@ function App() {
     <div className="fixed top-0 -z-20 h-screen w-full">
       <div className="h-screen w-screen inset-0 bg-gradient-to-t from-slate-900 to-sky-950"></div>
     </div>
-    <div className="hidden md:block lg:block mb-32"><Nav></Nav></div>
-    {/* <div className="block md:hidden lg:hidden"><Bottombar></Bottombar></div> */}
+    <div className="hidden md:block lg:block md:mb-8"><Nav></Nav></div>
+    {/* <div className="block md:hidden lg:hidden"><Bottombar></Bottombar></div>  */}
     <Hero></Hero>
      <About></About>
     <Work></Work>

@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 export const Nav = () => {
         return (
-        <div className="fixed z-10 w-full mb-20 flex justify-around items-center">
+        <div className="fixed z-10 w-full flex justify-around items-center">
             <motion.nav 
             initial={{ scale: 1 }}
             whileHover={{ scale: 0.9 }} 
