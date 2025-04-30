@@ -14,7 +14,6 @@ function App() {
     </div>
     <div className="hidden md:block lg:block md:mb-8"><Nav></Nav></div>
     <div className="block md:hidden lg:hidden"><Bottombar></Bottombar></div> 
-
   <div id="home"><Hero /></div>
   <div id="about"><About /></div>
   <div id="work"><Work /></div>
