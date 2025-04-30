@@ -2,7 +2,6 @@ import About from "./components/About"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import { Nav } from "./components/Navbar"
-import { SmallNav } from "./components/SmallNav"
 import Work from "./components/Work"
 import Projects from "./components/Projects"
 import Bottombar from "./components/Bottombar"
@@ -15,9 +14,11 @@ function App() {
     </div>
     <div className="hidden md:block lg:block md:mb-8"><Nav></Nav></div>
     <div className="block md:hidden lg:hidden"><Bottombar></Bottombar></div> 
-    <Hero></Hero>
-     <About></About>
-    <Work></Work>
+
+  <div id="home"><Hero /></div>
+  <div id="about"><About /></div>
+  <div id="work"><Work /></div>
+
     <Projects></Projects>
     <Footer></Footer> 
     
