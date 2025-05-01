@@ -7,7 +7,11 @@ const Work = () => {
         <div className='flex-col justify-center px-4 md:px-6'>
         <div className="text-4xl md:text-6xl font-tiny5 md:mt-24 md:mb-8 mt-8 text-center font-bold text-slate-200">Work & Exp.</div>
         {/* Technosoft */}
-        {<WorkTemplate profile={"Backend Developer Intern"} org={"AX Technosoft"} Location={"Gurugram"} mode={"On-Site"} start={"Sept, 2024"} end={"Current"}></WorkTemplate>}
+        {<WorkTemplate profile={"Backend Developer Intern"} org={"AX Technosoft"} Location={"Gurugram"} mode={"On-Site"} start={"Sept, 2024"} end={"Current"}
+        pointOne={"Integrated many CRM and ERP apps like Odoo, Quickbooks and Twilio. Including connectors with auth, rest apis and many other customization from scratch."}
+        pointTwo={"Implemented the complete functionality of deleting an entity with an improved time complexity of 0(n) with the use of a hashmap."}
+        pointThree={"Worked on different app and flow router apis, and contributed by resolving various bugs"}
+        ></WorkTemplate>}
         {/* Techlive */}
         {<WorkTemplate profile={"MERN Stack Trainee"} org={"Techlive"} mode={"Remote"} Location={"Remote"} start={"June, 2024"} end={"Aug, 2024"} pointOne={"Worked on a variety of web development projects using the MERN stack."} pointTwo={"Learned about building dynamic and responsive web applications. "} pointThree={"Gained practical experience and sharpened coding skills through hands-on projects and exercises."}></WorkTemplate>}
         </div>
