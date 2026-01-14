@@ -26,7 +26,7 @@ const About = () => {
           transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
           className="flex flex-col justify-center mt-10 w-full md:w-3/6 border-b-2 border-r-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-800 items-center">
           <div className="mt-2 text-center lg:mt-5 px-4 font-mono font-extralight md:font-medium text-sm md:text-lg text-slate-400 pb-3 tracking-normal md:tracking-wide">
-            Hey, I'm Aditya! A 20-year-old full-stack developer from India. I love working with MERN Stack and Flutter but trust me, there's more to it. I'm super into open-source projects and always up for connecting and collaborating. Ready to dive in and turn cool ideas into reality!
+            Hey, I'm Aditya! A 21-year-old full-stack developer from India. I love working with MERN Stack and Flutter but trust me, there's more to it. I'm into open-source projects and always up for connecting and collaborating. Currently I'm exploring AI/ML and Web3. Ready to connect and hear your ideas to turn cool ideas into reality!
           </div>
         </motion.div>
       </div>
