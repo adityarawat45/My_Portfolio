@@ -45,7 +45,6 @@ const Hero = () => {
 
   //Real time handler stuff
 
-  const [zone, setZone] = useState("");
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -53,9 +52,6 @@ const Hero = () => {
       setTime(new Date());
     }, 1000);
 
-  const hours = time.getHours();
-  const zone = hours >= 12 ? "PM" : "AM";
-  setZone(zone);
     return () => clearInterval(intervalId);
   }, []);
 
@@ -112,7 +108,7 @@ const Hero = () => {
             ></img>
           </div>
           <div className="flex flex-row justify-center gap-10 text-slate-300 font-semibold text-lg">
-            <div className="flex flex-row items-center justify-center">{time.toLocaleTimeString()} {zone}</div>
+            <div className="flex flex-row items-center justify-center">{time.toLocaleTimeString()}</div>
             <div className="flex flex-row justify-center items-center gap-1">
                 {status === "Online" ? (
                   /* ONLINE ICON */
