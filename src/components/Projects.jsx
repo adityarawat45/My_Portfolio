@@ -72,7 +72,7 @@ const ProjectCard = ({ title, desc, link, icon, stack }) => {
       </div>
       <div className="text my-3 text-slate-400 text-sm font-mono md:text-xl">{desc}</div>
       <div className="text my-3 text-green-500 text-sm font-semibold font-mono md:text-xl flex items-start justify-start">
-        <div className="text-sm md:text-lg">&bull;<span className="mr-2"></span>{stack}</div>
+        <div className="text-xs md:text-base">&bull;<span className="mr-2"></span>{stack}</div>
       </div>
     </motion.div>
   );
