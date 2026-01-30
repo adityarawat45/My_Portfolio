@@ -13,56 +13,74 @@ const About = () => {
   const isInView = useInView(ref);
 
   return (
-    <div>
-      <div className="sm:px-2 cursor-pointer mt-12 flex flex-col items-center justify-center md:mt-24 md:mb-8 px-5 md:px-20">
-        {/* About */}
-        <div className="text-4xl md:text-6xl font-tiny5 mt-2 md:mt-5 font-bold text-slate-200">About Me</div>
-        <motion.div 
-          ref={ref}
-          initial={{ opacity: 0, y: 0, scale: 0 }} 
-          // whileHover={{scale:1.05}}
-          whileTap={{scale: 0.9}}
-          animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
-          transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
-          className="flex flex-col justify-center mt-5 md:mt-7 lg:mt-7 w-full md:w-3/6 border-b-2 border-r-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-900 items-center">
-          <div className="mt-2 text-center lg:mt-5 px-4 font-mono font-extralight md:font-medium text-sm md:text-lg text-slate-400 pb-3 tracking-normal md:tracking-wide">
-            Hey, I'm Aditya! A 21-year-old full-stack developer from India. I love working with MERN Stack and Flutter but trust me, there's more to it. I'm into open-source projects and always up for connecting and collaborating. Currently I'm exploring AI/ML and Web3. Ready to connect and hear your ideas to turn cool ideas into reality!
+    <div className="w-full px-4 md:px-16 lg:px-24 py-12">
+      {/* Responsive Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start justify-between">
+
+        {/* LEFT: ABOUT SECTION */}
+        <div className="flex flex-col items-center md:items-center">
+          <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6">
+            About Me
+          </h2>
+
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.6, type: "spring" }}
+            className="w-full max-w-xl border border-slate-500 rounded-xl bg-slate-900 p-5 md:p-7"
+          >
+            <p className="text-center md:text-center font-mono text-sm md:text-xl text-slate-400 tracking-wide">
+              Hey, I'm Aditya! A 21-year-old full-stack developer from India.
+              I love working with MERN Stack and Flutter — but there’s more to it.
+              I’m into open source, collaboration, and currently exploring AI/ML
+              and Web3. Always open to turning ideas into real products.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* RIGHT: SKILLS SECTION */}
+        <div className="flex flex-col items-center">
+          <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6">
+            Tech Stack
+          </h2>
+
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
+              <Box5 text="Java" img={<RiJavaLine />} />
+              <Box5 text="Typescript" img={<BiLogoTypescript />} />
+              <Box5 text="Javascript" img={<BiLogoJavascript />} />
+              <Box5 text="Dart" img={<SiDart />} />
+              <Box5 text="Python" img={<IoLogoPython />} />
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <Box text="Prisma" img={<SiPrisma />} />
+              <Box text="MongoDB" img={<SiMongodb />} />
+              <Box text="Firebase" img={<SiFirebase />} />
+              <Box text="Postgres" img={<BiLogoPostgresql />} />
+              <Box text="Flutter" img={<SiFlutter />} />
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <Box3 text="NodeJS" img={<IoLogoNodejs />} />
+              <Box3 text="React" img={<IoLogoReact />} />
+              <Box3 text="NextJS" img={<RiNextjsFill />} />
+              <Box3 text="Express" img={<SiExpress />} />
+              <Box3 text="Recoil" img={<SiRecoil />} />
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <Box2 text="AWS" img={<FaAws />} />
+              <Box2 text="Docker" img={<SiDocker />} />
+              <Box2 text="Much more" img={<LuAmpersand />} />
+            </div>
           </div>
-        </motion.div>
-      </div>
-      {/* Skills */}
-      <div className="mt-5 flex flex-col justify-center px-4 items-center">
-        <div className="mb-3 md:mt-20 md:mb-8 font-tiny5 text-4xl mt-4 md:text-6xl font-bold text-slate-200">Tech Stack</div>
-        <div  
-         className="flex flex-wrap my-1 md:my-2 justify-center items-center gap-3 md:gap-6">
-          <Box5 text={"Java"} img={<RiJavaLine />} />
-          <Box5 img={<BiLogoTypescript />} text={"Typescript"} />
-          <Box5 img={<BiLogoJavascript />} text={"Javascript"} />
-          <Box5 img={<SiDart />} text={"Dart"} />
-          <Box5 img={<IoLogoPython />} text={"Python"} />
         </div>
-        <div className="flex flex-wrap my-2 justify-center items-center gap-3 md:gap-6">
-          <Box img={<SiPrisma />} text={"Prisma"} />
-          <Box img={<SiMongodb />} text={"MongoDB"} />
-          <Box img={<SiFirebase />} text={"Firebase"} />
-          <Box img={<BiLogoPostgresql />} text={"Postgres"} />
-          <Box text={"Flutter"} img={<SiFlutter />} />
-        </div>
-        <div className="flex flex-wrap my-1 md:my-2 justify-center items-center gap-3 md:gap-6">
-          <Box3 img={<IoLogoNodejs />} text={"NodeJS"} />
-          <Box3 img={<IoLogoReact />} text={"React"} />
-          <Box3 img={<RiNextjsFill />} text={"NextJs"} />
-          <Box3 img={<SiExpress />} text={"Express"} />
-          <Box3 img={<SiRecoil />} text={"Recoil"} />
-        </div>
-        <div className="flex flex-wrap my-2 justify-center items-center gap-3 md:gap-6">
-          <Box2 text={"AWS"} img={<FaAws />} />
-          <Box2 img={<SiDocker />} text={"Docker"} />
-          <Box2 text={"much more"} img={<LuAmpersand />} />
-        </div>
+
       </div>
     </div>
   );
-}
+};
 
 export default About;

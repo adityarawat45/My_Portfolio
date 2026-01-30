@@ -15,7 +15,7 @@ export const Box = ({ text, img }) => {
       animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
       transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
     >
-      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-sm md:text-lg font-bold font-mono text-slate-950'>
+      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-md md:text-xl font-bold font-mono text-slate-950'>
         <div>{img}</div>
         <div>{text}</div>
       </div>
@@ -37,7 +37,7 @@ export const Box2 = ({ text, img }) => {
       animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
       transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
     >
-      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-sm md:text-lg font-bold font-mono text-slate-950'>
+      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-md md:text-xl font-bold font-mono text-slate-950'>
         <div>{img}</div>
         <div>{text}</div>
       </div>
@@ -59,7 +59,7 @@ export const Box3 = ({ text, img }) => {
       transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
       className={`py-1.5 px-4 cursor-pointer md:py-2 md:px-5 w-fit bg-lime-700 border-r-4 border-b-4 border-lime-900 rounded-b-lg rounded-tr-md rounded-t-lg rounded-l-lg`}
     >
-      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-sm md:text-lg font-bold font-mono text-slate-950'>
+      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-md md:text-xl font-bold font-mono text-slate-950'>
         <div>{img}</div>
         <div>{text}</div>
       </div>
@@ -81,7 +81,7 @@ export const Box4 = ({ text, img }) => {
       transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
       className={`py-1.5 px-4 cursor-pointer md:py-2 md:px-5 w-fit bg-red-800 border-r-4 border-b-4 border-red-900 rounded-b-lg rounded-r-lg rounded-t-lg rounded-l-lg`}
     >
-      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-sm md:text-lg font-bold font-mono text-slate-950'>
+      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-md md:text-xl font-bold font-mono text-slate-950'>
         <div>{img}</div>
         <div>{text}</div>
       </div>
@@ -103,7 +103,7 @@ export const Box5 = ({ text, img }) => {
       transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
       className={`py-1.5 cursor-pointer px-4 md:py-2 md:px-5 w-fit bg-fuchsia-700 border-r-4 border-b-4 border-fuchsia-900 rounded-b-lg rounded-r-lg rounded-t-lg rounded-l-lg`}
     >
-      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-sm md:text-lg font-bold font-mono text-slate-950'>
+      <div className='flex flex-row justify-evenly gap-2 md:gap-4 items-center text-md md:text-xl font-bold font-mono text-slate-950'>
         <div>{img}</div>
         <div>{text}</div>
       </div>
