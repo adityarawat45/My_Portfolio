@@ -7,8 +7,70 @@ import { RiRadioButtonLine } from "react-icons/ri";
 import prof from "../images/prof.png";
 import axios from "axios";
 
-const Hero = () => {
 
+function Status() {
+  //Real time handler stuff
+
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  //Discord Active Status handler stuff
+  const [status, setStatus] = useState("Offline");
+
+  useEffect(() => {
+    async function fetchStatus() {
+      try {
+        const res = await axios.get(
+          "https://api.lanyard.rest/v1/users/927385744740347925",
+        );
+
+        const rawStatus = res?.data?.data?.discord_status ?? "offline";
+
+        const status =
+          rawStatus.length > 0
+            ? rawStatus[0].toUpperCase() + rawStatus.slice(1)
+            : "Offline";
+        setStatus(status);
+      } catch {
+        setStatus("Offline");
+      }
+    }
+
+    fetchStatus();
+  }, []);
+
+  return (
+    <div className="flex flex-row justify-center md:justify-evenly gap-10 text-slate-300 font-semibold text-lg md:text-2xl">
+      <div className="flex flex-row items-center justify-center">
+        {time.toLocaleTimeString()}
+      </div>
+      <div className="flex flex-row justify-center items-center gap-1">
+        {status === "Online" ? (
+          /* ONLINE ICON */
+          <div className="text-green-500">
+            <RiRadioButtonLine></RiRadioButtonLine>
+          </div>
+        ) : (
+          /* OFFLINE ICON */
+          <div className="text-amber-300">
+            <GiNightSleep></GiNightSleep>
+          </div>
+        )}
+        {status}
+      </div>
+    </div>
+  );
+};
+
+
+const Hero = () => {
   //Hero Section handler Stuff
   const englishName = "Aditya";
   const hindiName = "आदित्य";
@@ -43,40 +105,6 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, isEnglish]);
 
-  //Real time handler stuff
-
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  //Discord Active Status handler stuff
-  const [status, setStatus] = useState("Offline");
-
-  useEffect(() => {
-  async function fetchStatus() {
-    try {
-      const res = await axios.get(
-        "https://api.lanyard.rest/v1/users/927385744740347925"
-      );
-
-      const rawStatus = res?.data?.data?.discord_status ?? "offline";
-
-      const status = rawStatus.length > 0? rawStatus[0].toUpperCase() + rawStatus.slice(1): "Offline";
-      setStatus(status);
-    } catch {
-      setStatus("Offline");
-    }
-  }
-
-  fetchStatus();
-}, []);
-
   return (
     <div className="md:grid md:grid-cols-2 md:h-screen justify-center">
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
@@ -107,19 +135,8 @@ const Hero = () => {
               className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-3xl cursor-pointer"
             ></img>
           </div>
-          <div className="flex flex-row justify-center gap-10 text-slate-300 font-semibold text-lg">
-            <div className="flex flex-row items-center justify-center">{time.toLocaleTimeString()}</div>
-            <div className="flex flex-row justify-center items-center gap-1">
-                {status === "Online" ? (
-                  /* ONLINE ICON */
-                  <div className="text-green-500"><RiRadioButtonLine></RiRadioButtonLine></div>
-                ) : (
-                  /* OFFLINE ICON */
-                  <div className="text-amber-300"><GiNightSleep></GiNightSleep></div>
-                )}
-              {status}</div>
-          </div>
-          <div className='flex flex-row justify-center'> </div>
+            <Status></Status>
+          <div className="flex flex-row justify-center"> </div>
         </div>
 
         <div className="flex md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
@@ -182,6 +199,7 @@ const Hero = () => {
             src={prof}
             alt="Aditya"
           />
+          <div className="mt-5"><Status></Status></div>
         </div>
       </div>
     </div>
