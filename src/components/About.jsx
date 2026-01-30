@@ -11,10 +11,11 @@ import { GitHubCalendar } from 'react-github-calendar';
 
 function GithubActivity() {
   return (
-    <div className="flex flex-col items-center mt-10 md:mt-32 w-full">
+    <div className="flex flex-col items-center mt-10 md:mt-24 w-full">
       
       {/* Desktop */}
       <div className="hidden md:block">
+        <div className='text-6xl font-tiny5 font-bold text-slate-200 mb-7 flex flex-row items-center justify-center'>Github Activity</div>
         <GitHubCalendar
           username="adityarawat45"
           year={2026}
