@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Box, Box2, Box3, Box4, Box5} from "./SkillBox";
 import {BiLogoTypescript, BiLogoJavascript, BiLogoPostgresql} from "react-icons/bi";
 import {IoLogoPython, IoLogoReact, IoLogoNodejs} from "react-icons/io5";
@@ -24,14 +24,14 @@ const About = () => {
           whileTap={{scale: 0.9}}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}} 
           transition={{ duration: 0.6, bounce: 0.4, type: 'spring' }}
-          className="flex flex-col justify-center mt-10 w-full md:w-3/6 border-b-2 border-r-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-800 items-center">
+          className="flex flex-col justify-center mt-5 md:mt-7 lg:mt-7 w-full md:w-3/6 border-b-2 border-r-2 border-l-2 border-t-2 rounded-b-xl rounded-t-xl border-slate-500 bg-slate-900 items-center">
           <div className="mt-2 text-center lg:mt-5 px-4 font-mono font-extralight md:font-medium text-sm md:text-lg text-slate-400 pb-3 tracking-normal md:tracking-wide">
             Hey, I'm Aditya! A 21-year-old full-stack developer from India. I love working with MERN Stack and Flutter but trust me, there's more to it. I'm into open-source projects and always up for connecting and collaborating. Currently I'm exploring AI/ML and Web3. Ready to connect and hear your ideas to turn cool ideas into reality!
           </div>
         </motion.div>
       </div>
       {/* Skills */}
-      <div className="mt-7 flex flex-col justify-center px-4 items-center">
+      <div className="mt-5 flex flex-col justify-center px-4 items-center">
         <div className="mb-3 md:mt-20 md:mb-8 font-tiny5 text-4xl mt-4 md:text-6xl font-bold text-slate-200">Tech Stack</div>
         <div  
          className="flex flex-wrap my-1 md:my-2 justify-center items-center gap-3 md:gap-6">

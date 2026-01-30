@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion ,useInView} from 'framer-motion';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import prof from '../images/prof.png';
+
+// const axios = require("axios");
+
+//   setResponse = await axios.get("https://api.lanyard.rest/v1/users/927385744740347925");
 
 const Hero = () => {
   const englishName = "Aditya";
@@ -35,6 +39,16 @@ const Hero = () => {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, isEnglish]);
+
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
   
   return (
 
@@ -51,9 +65,14 @@ const Hero = () => {
         <div className=" md:ml-20 mx-2 md:text-3xl text-lg font-mono text-slate-300 font-bold ">
           Does more than just crafting <span className="text-rose-600">bugs </span> into <span className="text-green-500">features.</span>
         </div>
-        <div className=' md:hidden lg:hidden flex flex-row justify-center mt-5 mb-3'>
-          <img src={prof}
-      className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-3xl cursor-pointer"></img>
+        <div className='md:hidden lg:hidden flex flex-col'>
+          <div className=' flex flex-row justify-center mt-5 mb-3'>
+            <img src={prof} className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-3xl cursor-pointer"></img>
+          </div>
+          <div className='flex flex-row justify-center text-slate-300 font-bold text-lg'>
+            {time.toLocaleTimeString()}
+          </div>
+          {/* <div className='flex flex-row justify-center'> <div>Status</div></div> */}
         </div>
         <div className="flex md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
