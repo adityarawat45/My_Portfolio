@@ -30,7 +30,7 @@ const About = () => {
             transition={{ duration: 0.6, type: "spring" }}
             className="w-full max-w-xl border border-slate-500 rounded-xl bg-slate-900 p-5 md:p-7"
           >
-            <p className="text-center md:text-center font-mono text-sm md:text-xl text-slate-400 tracking-wide">
+            <p className="text-center md:text-center font-mono font-semibold text-md md:text-xl text-slate-400 tracking-wide">
               Hey, I'm Aditya! A 21-year-old full-stack developer from India.
               I love working with MERN Stack and Flutter — but there’s more to it.
               I’m into open source, collaboration, and currently exploring AI/ML
@@ -45,7 +45,7 @@ const About = () => {
             Tech Stack
           </h2>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-10/12 md:w-1/2">
             <div className="flex flex-wrap justify-center gap-4">
               <Box5 text="Java" img={<RiJavaLine />} />
               <Box5 text="Typescript" img={<BiLogoTypescript />} />
