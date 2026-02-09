@@ -5,26 +5,41 @@ import { Nav } from "./components/Navbar"
 import Work from "./components/Work"
 import Projects from "./components/Projects"
 import Bottombar from "./components/Bottombar"
+
 import { useEffect, useRef } from "react";
 
-function CursorFollower() {
-  const ref = useRef(null);
-  const mouse = useRef({ x: 0, y: 0 });
-  const pos = useRef({ x: 0, y: 0 });
+function App() {
+  const target = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
+  const current = useRef({ x: target.current.x, y: target.current.y });
+  const velocity = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const onMove = (e) => {
-      mouse.current.x = e.clientX;
-      mouse.current.y = e.clientY;
+      target.current.x = e.clientX;
+      target.current.y = e.clientY;
     };
 
     const animate = () => {
-      pos.current.x += (mouse.current.x - pos.current.x) * 0.07;
-      pos.current.y += (mouse.current.y - pos.current.y) * 0.07;
+      const stiffness = 0.5; // how fast it moves
+      const damping = 0.85;   // bounce resistance
 
-      if (ref.current) {
-        ref.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)`;
-      }
+      const dx = target.current.x - current.current.x;
+      const dy = target.current.y - current.current.y;
+
+      velocity.current.x = velocity.current.x * damping + dx * stiffness;
+      velocity.current.y = velocity.current.y * damping + dy * stiffness;
+
+      current.current.x += velocity.current.x;
+      current.current.y += velocity.current.y;
+
+      document.documentElement.style.setProperty(
+        "--mx",
+        `${current.current.x}px`
+      );
+      document.documentElement.style.setProperty(
+        "--my",
+        `${current.current.y}px`
+      );
 
       requestAnimationFrame(animate);
     };
@@ -36,36 +51,24 @@ function CursorFollower() {
   }, []);
 
   return (
-    <div
-      ref={ref}
-      className="fixed top-0 left-0 z-50 pointer-events-none
-                 -translate-x-1/2 -translate-y-1/2"
-      style={{
-        width: "52px",
-        height: "52px",
-        borderRadius: "9999px",
-        background:
-          "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.32), rgba(255,255,255,0.08) 60%, transparent 75%)",
-        backdropFilter: "blur(8px)",
-        WebkitBackdropFilter: "blur(8px)",
-        boxShadow: "0 0 30px rgba(255,255,255,0.12)",
-        mixBlendMode: "screen",
-      }}
-    />
-  );
-}
-
-function App() {
-  return (
     <div className="overflow-x-hidden overflow-y-hidden text-neutral-300 antialiased selection:bg-gray-400 selection:text-gray-900">
-
-      {/* Static background */}
+      
+      {/* Background */}
       <div className="fixed inset-0 -z-20">
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-950" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `
+              radial-gradient(
+                750px at var(--mx, 50%) var(--my, 50%),
+                rgba(255,255,255,0.045),
+                transparent 70%
+              ),
+              linear-gradient(to top, #0f172a, #020617)
+            `,
+          }}
+        />
       </div>
-
-      {/* Cursor follower */}
-      <CursorFollower />
 
       {/* Navigation */}
       <div className="hidden md:block md:mb-8">
@@ -82,10 +85,8 @@ function App() {
 
       <Projects />
       <Footer />
-
     </div>
   );
 }
 
 export default App;
-
