@@ -109,20 +109,22 @@ const Hero = () => {
     <div className="md:grid md:grid-cols-2 md:h-screen justify-center">
       <div className="flex flex-col justify-center text-left px-3 md:px-10">
         <div className="relative py-5">
-          <h1 className="hidden md:block text-6xl md:text-8xl  mx-2 mt-5 text-slate-300 pb-2 md:ml-20 font-bold">
+          {/* Large device */}
+          <h1 className="hidden md:block text-6xl md:text-8xl mx-2 mt-5 text-slate-300 pb-2 md:ml-64 font-bold">
             {`I'm ${name}`}
-            <span className="ccursor animate-blink font-thin">|</span>
+            <span className="cursor animate-blink font-thin">|</span>
           </h1>
+          {/* small device */}
           <h1 className="block md:hidden lg:hidden text-6xl md:text-8xl mx-2 mt-5  text-slate-300  md:ml-20 font-bold">{`I'm`}</h1>
           <h1 className="block md:hidden lg:hidden text-6xl md:text-8xl mx-2 text-slate-300 md:ml-20 font-bold">
             {name}
             <span className="cursor  animate-blink font-thin">|</span>
           </h1>
         </div>
-        <div className="md:ml-20 mx-2 mt-5 md:mt-7 text-lg md:text-3xl font-mono text-slate-300 font-bold">
+        <div className="md:ml-64 mx-2 mt-5 md:mt-7 text-lg md:text-3xl font-mono text-slate-300 font-bold">
           A Full-Stack Dev.
         </div>
-        <div className=" md:ml-20 mx-2 md:text-3xl text-lg font-mono text-slate-300 font-bold ">
+        <div className=" md:ml-64 mx-2 md:text-3xl text-lg font-mono text-slate-300 font-bold ">
           Does more than just crafting{" "}
           <span className="text-rose-600">bugs </span> into{" "}
           <span className="text-green-500">features.</span>
@@ -139,7 +141,7 @@ const Hero = () => {
           <div className="flex flex-row justify-center"> </div>
         </div>
 
-        <div className="flex md:ml-20 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
+        <div className="flex md:ml-64 mt-8 md:mt-8 md:w-3/6 items-center text-amber-400 justify-evenly md:justify-between md:gap-2 text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
@@ -193,9 +195,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-center items-center">
+        {/* large device */}
         <div className="hidden md:block">
           <img
-            className="border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-3xl size-96"
+            className="border-l-2 border-b-2 border-t-2 cursor-pointer border-r-2 border-solid border-stone-600 rounded-3xl size-64"
             src={prof}
             alt="Aditya"
           />
