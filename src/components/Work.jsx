@@ -12,7 +12,7 @@ const Work = () => {
         pointTwo={"Integrated many CRM and ERP apps like Odoo, Quickbooks, Shopify and Twilio. Including connectors with auth, rest apis and many other customization from scratch."}
         pointThree={"Worked on different app and flow router apis, and contributed by resolving various bugs."}
         ></WorkTemplate>}
-        {/* CRPTM */}
+        {/* CRPTM | CRPTM is disbanded */}
         {/* {<WorkTemplate profile={"Backend Engineer"} org={"CRPTM"} Location={"Gurugram"} mode={"On-Site"} start={"Aug, 2025"} end={"Dec, 2025"}
         pointOne={"Worked on integrations with major crypto exchanges/blockchains including HitBTC, Bibox, and Gemini."}
         pointTwo={"Designed and maintained JUnit test cases for taxation, transaction validation, and integration modules."}
