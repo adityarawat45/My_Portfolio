@@ -66,9 +66,9 @@ const About = () => {
             transition={{ duration: 0.6, type: "spring" }}
             className="w-full  border border-slate-500 rounded-xl bg-slate-900 p-5 md:p-7"
           >
-            <p className="text-center md:text-center font-mono text-md md:text-xl text-slate-400 tracking-wide">
-              Hey, I'm Aditya! A 21-year-old full-stack developer from India.
-              I love working with MERN Stack and Flutter — but there’s more to it.
+            <p className="text-center md:text-balance font-mono text-md md:text-xl text-slate-400 tracking-wide">
+              Hey, I'm Aditya! A 21-year-old Full-Stack Engineer from India.
+              I love working with complex codebases without vibecoding.
               I’m into open source, collaboration, and currently exploring AI/ML
               and Web3. Always open to turning ideas into real products.
             </p>
