@@ -23,6 +23,7 @@ function GithubActivity() {
           showMonthLabels
           showTotalCount
           blockRadius={10}
+          blockSize={10}
         />
       </div>
 
@@ -53,7 +54,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start justify-between">
 
         {/* LEFT: ABOUT SECTION */}
-        <div className="flex flex-col items-center md:items-center">
+        <div className="flex flex-col items-center md:items-center md:ml-48">
           <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6">
             About Me
           </h2>
