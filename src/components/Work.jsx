@@ -8,6 +8,12 @@ const Work = () => {
         <div className="text-4xl md:text-6xl font-tiny5 md:mt-24 md:mb-8 mt-8 text-center font-bold text-slate-200">
           Work & Exp.
         </div>
+        {/* CRPTM | CRPTM is disbanded */}
+        {<WorkTemplate profile={"Backend Engineer Intern"} org={"CRPTM"} Location={"Gurugram"} mode={"On-Site"} start={"Sep, 2024"} end={"Feb, 2025"}
+        pointOne={"Worked on integrations with major crypto exchanges/blockchains including HitBTC, Bibox, and Gemini."}
+        pointTwo={"Designed and maintained JUnit test cases for taxation, transaction validation, and integration modules."}
+        pointThree={"Designed and implemented taxation computation logics for cryptocurrency trades and crypto transactions."}
+        ></WorkTemplate>}
         {/* Aonflow */}
         {
           <WorkTemplate
@@ -28,12 +34,6 @@ const Work = () => {
             }
           ></WorkTemplate>
         }
-        {/* CRPTM | CRPTM is disbanded */}
-        {/* {<WorkTemplate profile={"Backend Engineer"} org={"CRPTM"} Location={"Gurugram"} mode={"On-Site"} start={"Aug, 2025"} end={"Dec, 2025"}
-        pointOne={"Worked on integrations with major crypto exchanges/blockchains including HitBTC, Bibox, and Gemini."}
-        pointTwo={"Designed and maintained JUnit test cases for taxation, transaction validation, and integration modules."}
-        pointThree={"Designed and implemented taxation computation logics for cryptocurrency trades and crypto transactions."}
-        ></WorkTemplate>} */}
       </div>
     </div>
   );
