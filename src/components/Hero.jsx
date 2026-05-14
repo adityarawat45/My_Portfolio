@@ -47,7 +47,7 @@ function Status() {
   }, []);
 
   return (
-    <div className="flex flex-row justify-center md:justify-evenly gap-10 text-slate-300 font-semibold text-lg md:text-2xl">
+    <div className="flex flex-row justify-center md:justify-evenly gap-6 md:gap-10 text-slate-300 font-semibold text-lg md:text-lg">
       <div className="flex flex-row items-center justify-center">
         {time.toLocaleTimeString()}
       </div>
