@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
-import {Box, Box2, Box3, Box4, Box5} from "./SkillBox";
-import {BiLogoTypescript, BiLogoJavascript, BiLogoPostgresql, BiLogoGoLang} from "react-icons/bi";
-import {IoLogoPython, IoLogoReact, IoLogoNodejs} from "react-icons/io5";
-import {RiJavaLine, RiNextjsFill} from "react-icons/ri";
-import {SiDart, SiExpress, SiSpringboot, SiFlutter, SiFirebase, SiMongodb, SiPrisma, SiDocker} from "react-icons/si";
-import {FaGithub, FaAws } from "react-icons/fa";
-import {motion, useInView} from "framer-motion";
-import {LuAmpersand} from "react-icons/lu";
+import { Box, Box2, Box3, Box4, Box5 } from "./SkillBox";
+import { BiLogoTypescript, BiLogoJavascript, BiLogoPostgresql, BiLogoGoLang } from "react-icons/bi";
+import { IoLogoPython, IoLogoReact, IoLogoNodejs } from "react-icons/io5";
+import { RiJavaLine, RiNextjsFill } from "react-icons/ri";
+import { SiDart, SiExpress, SiSpringboot, SiFlutter, SiFirebase, SiMongodb, SiPrisma, SiDocker } from "react-icons/si";
+import { FaGithub, FaAws } from "react-icons/fa";
+import { motion, useInView } from "framer-motion";
+import { LuAmpersand } from "react-icons/lu";
 import { GitHubCalendar } from 'react-github-calendar';
 
 function GithubActivity() {
   return (
     <div className="flex flex-col items-center mt-10 md:mt-24 w-full">
-      
+
       {/* Desktop */}
       <div className="hidden md:block">
         <div className='text-6xl font-tiny5 font-bold text-slate-200 mb-7 flex flex-row items-center justify-center'>Github Activity</div>
@@ -22,8 +22,8 @@ function GithubActivity() {
           colorScheme="dark"
           showMonthLabels
           showTotalCount
-          blockRadius={10}
-          blockSize={10}
+          blockRadius={8}
+          blockSize={8}
         />
       </div>
 
@@ -54,7 +54,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start justify-between">
 
         {/* LEFT: ABOUT SECTION */}
-        <div className="flex flex-col items-center md:items-center md:ml-48">
+        <div className="flex flex-col items-center md:items-center">
           <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6">
             About Me
           </h2>
@@ -77,7 +77,7 @@ const About = () => {
         </div>
 
         {/* Github Section To be integrated!! */}
-    
+
         {/* RIGHT: SKILLS SECTION */}
         <div className="flex flex-col items-center">
           <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6">

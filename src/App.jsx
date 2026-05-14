@@ -8,7 +8,7 @@ import Bottombar from "./components/Bottombar"
 
 function App() {
   return (
-    <div className="overflow-x-hidden overflow-y-hidden text-neutral-300 antialiased selection:bg-gray-400 selection:text-gray-900">
+    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-gray-400 selection:text-gray-900">
 
       {/* Background */}
       <div className="fixed inset-0 -z-20">
