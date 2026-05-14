@@ -39,6 +39,13 @@ const Projects = () => {
           stack="Dart, Flutter, Firebase Auth, Cloud Firestore" 
           icon={<FaCode />} 
         />
+        <ProjectCard 
+          title="Monk Arena" 
+          desc="A habit-tracking ranking-based platform featuring custom private rooms, competitive leaderboards, and a dynamic dashboard." 
+          link="https://monkarena.vercel.app" 
+          stack="React, Supabase" 
+          icon={<FaGlobe />} 
+        />
       </div>
     </div>
   );
