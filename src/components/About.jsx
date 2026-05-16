@@ -50,11 +50,11 @@ const About = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="w-full px-4 md:px-16 lg:px-24 py-12 flex flex-col items-center">
+    <div className="w-full px-4 md:px-16 lg:px-24 pt-12 pb-6 md:py-16 lg:py-24 flex flex-col items-center">
       
       {/* ABOUT SECTION */}
       <div className="flex flex-col items-center w-full max-w-4xl order-1 mb-10 md:mb-24">
-        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-4 md:mb-8">
+        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6 md:mb-8">
           About Me
         </h2>
 
@@ -76,8 +76,8 @@ const About = () => {
       </div>
 
       {/* TECH STACK SECTION */}
-      <div className="flex flex-col items-center w-full max-w-5xl order-3 md:order-2 mb-16 md:mb-24">
-        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-8">
+      <div className="flex flex-col items-center w-full max-w-5xl order-3 md:order-2 mb-0 md:mb-24">
+        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6 md:mb-8">
           Tech Stack
         </h2>
 
@@ -115,7 +115,7 @@ const About = () => {
       </div>
 
       {/* GITHUB SECTION */}
-      <div className="flex flex-col items-center w-full max-w-5xl order-2 md:order-3 mb-16 md:mb-0">
+      <div className="flex flex-col items-center w-full max-w-5xl order-2 md:order-3 mb-10 md:mb-0">
         <GithubActivity />
       </div>
 

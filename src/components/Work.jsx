@@ -5,7 +5,7 @@ const Work = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex-col justify-center px-4 md:px-6">
-        <div className="text-4xl md:text-6xl font-tiny5 md:mt-8 md:mb-8 mt-2 text-center font-bold text-slate-200">
+        <div className="text-4xl md:text-6xl font-tiny5 mt-6 mb-6 md:mt-12 md:mb-8 text-center font-bold text-slate-200">
           Work & Exp.
         </div>
         {/* CRPTM | CRPTM is disbanded */}
