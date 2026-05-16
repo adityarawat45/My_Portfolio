@@ -50,7 +50,7 @@ const About = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="w-full px-4 md:px-16 lg:px-24 pt-12 pb-6 md:pt-24 md:pb-0 flex flex-col items-center">
+    <div className="w-full px-4 md:px-16 lg:px-24 pt-12 md:pt-4 pb-6  md:pb-0 flex flex-col items-center">
       
       {/* ABOUT SECTION */}
       <div className="flex flex-col items-center w-full max-w-4xl order-1 mb-10 md:mb-0">

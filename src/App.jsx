@@ -19,7 +19,7 @@ function App() {
             backgroundImage:
               "radial-gradient(circle, rgba(255,255,255,0.45) 1px, transparent 1px)",
             backgroundSize: "24px 24px",
-          }}
+          }} 
         />
       </div>
 

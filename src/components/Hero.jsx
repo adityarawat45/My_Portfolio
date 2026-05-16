@@ -47,7 +47,7 @@ function Status() {
   }, []);
 
   return (
-    <div className="flex flex-row justify-center md:justify-evenly gap-6 md:gap-10 text-slate-300 font-semibold text-lg md:text-lg">
+    <div className="flex flex-row justify-center md:justify-evenly gap-6 md:gap-10 text-slate-300 font-semibold text-sm md:text-lg">
       <div className="flex flex-row items-center justify-center">
         {time.toLocaleTimeString()}
       </div>
@@ -110,7 +110,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center text-left px-5 md:pl-20 lg:pl-40 xl:pl-56">
         <div className="relative py-5">
           {/* Large device */}
-          <h1 className="hidden md:block text-6xl md:text-8xl mx-2 mt-5 text-slate-300 pb-2 font-bold">
+          <h1 className="hidden md:block text-6xl md:text-7xl mx-2 mt-5 text-slate-300 pb-2 font-bold">
             {`I'm ${name}`}
             <span className="cursor animate-blink font-thin">|</span>
           </h1>
@@ -121,7 +121,7 @@ const Hero = () => {
             <span className="cursor  animate-blink font-thin">|</span>
           </h1>
         </div>
-        <div className="mx-2 mt-5 md:mt-7 text-lg md:text-3xl font-mono text-slate-300 font-bold">
+        <div className="mx-2 mt-1 md:mt-0 text-lg md:text-3xl font-mono text-slate-300 font-bold">
           A Full-Stack Dev.
         </div>
         <div className="mx-2 md:text-3xl text-lg font-mono text-slate-300 font-bold ">
@@ -132,16 +132,17 @@ const Hero = () => {
 
         <div className="md:hidden lg:hidden flex flex-col">
           <div className="flex flex-row justify-center mt-5 mb-5">
+            {/* small device pfp */}
             <img
               src={prof}
-              className="cursor:pointer mt-3 focus:animate-tilt size-36 rounded-3xl cursor-pointer"
+              className="cursor:pointer mt-3 focus:animate-tilt size-32 rounded-3xl cursor-pointer"
             ></img>
           </div>
             <Status></Status>
           <div className="flex flex-row justify-center"> </div>
         </div>
 
-        <div className="flex mt-8 md:mt-8 md:w-4/5 items-center text-amber-400 justify-evenly md:justify-start md:gap-8 text-2xl">
+        <div className="flex mt-6 md:mt-8 md:w-4/5 items-center text-amber-400 justify-evenly md:justify-start md:gap-8 text-xl md:text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
@@ -177,7 +178,7 @@ const Hero = () => {
             download={"Aditya_Rawat.pdf"}
             className="hidden md:block "
           >
-            <button className=" rounded-2xl text-lg border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <button className=" rounded-2xl text-xl md:text-lg border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
               Resume
             </button>
           </a>
@@ -188,7 +189,7 @@ const Hero = () => {
             download={"Aditya_Rawat.pdf"}
             className="block text-base md:hidden lg:hidden "
           >
-            <button className=" rounded-2xl border-2 mt-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <button className=" rounded-2xl border-2 border-dashed border-gray-900 bg-slate-500 px-2 py-1 font-semibold text-md uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
               Resume
             </button>
           </a>
