@@ -142,7 +142,7 @@ const Hero = () => {
           <div className="flex flex-row justify-center"> </div>
         </div>
 
-        <div className="flex mt-6 md:mt-8 md:w-4/5 items-center text-amber-400 justify-evenly md:justify-start md:gap-8 text-xl md:text-2xl">
+        <div className="flex mt-6 md:ml-2 md:mt-8 md:w-4/5 items-center text-amber-400 justify-evenly md:justify-start md:gap-8 text-xl md:text-2xl">
           <a href="https://www.linkedin.com/in/aditya-rawat-231511249">
             <motion.div
               className="inline-block relative mx-3 md:mx-0"
