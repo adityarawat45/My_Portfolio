@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="text-4xl md:text-6xl flex justify-center items-center font-tiny5 mt-8 mb-6 md:mt-24 md:mb-8 font-bold text-slate-200">
         Some Builds
       </div>
-      <div className="flex flex-wrap px-2 md:px-20 justify-center mt-4 mb-5">
+      <div className="flex flex-wrap px-2 md:px-20 justify-center mb-5 gap-y-4 md:gap-y-0">
         {/* All Projects */}
         <ProjectCard 
           title="Blog Nest" 

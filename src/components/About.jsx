@@ -15,7 +15,7 @@ function GithubActivity() {
 
       {/* Desktop */}
       <div className="hidden md:flex flex-col items-center w-full max-w-full overflow-x-auto pb-4">
-        <div className='text-4xl lg:text-6xl font-tiny5 font-bold text-slate-200 mb-8 flex flex-row items-center justify-center'>Github Activity</div>
+        <div className='text-4xl lg:text-6xl font-tiny5 font-bold text-slate-200 mb-8 md:mb-12 flex flex-row items-center justify-center'>Github Activity</div>
         <GitHubCalendar
           username="adityarawat45"
           year={2026}
@@ -50,11 +50,11 @@ const About = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="w-full px-4 md:px-16 lg:px-24 pt-12 pb-6 md:py-16 lg:py-24 flex flex-col items-center">
+    <div className="w-full px-4 md:px-16 lg:px-24 pt-12 pb-6 md:pt-24 md:pb-0 flex flex-col items-center">
       
       {/* ABOUT SECTION */}
-      <div className="flex flex-col items-center w-full max-w-4xl order-1 mb-10 md:mb-24">
-        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6 md:mb-8">
+      <div className="flex flex-col items-center w-full max-w-4xl order-1 mb-10 md:mb-0">
+        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6 md:mb-12">
           About Me
         </h2>
 
@@ -76,8 +76,8 @@ const About = () => {
       </div>
 
       {/* TECH STACK SECTION */}
-      <div className="flex flex-col items-center w-full max-w-5xl order-3 md:order-2 mb-0 md:mb-24">
-        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6 md:mb-8">
+      <div className="flex flex-col items-center w-full max-w-5xl order-3 md:order-2 mb-0 md:mb-0 md:mt-24">
+        <h2 className="text-4xl md:text-6xl font-tiny5 font-bold text-slate-200 mb-6 md:mb-12">
           Tech Stack
         </h2>
 
@@ -115,7 +115,7 @@ const About = () => {
       </div>
 
       {/* GITHUB SECTION */}
-      <div className="flex flex-col items-center w-full max-w-5xl order-2 md:order-3 mb-10 md:mb-0">
+      <div className="flex flex-col items-center w-full max-w-5xl order-2 md:order-3 mb-10 md:mb-0 md:mt-24">
         <GithubActivity />
       </div>
 

@@ -5,35 +5,37 @@ const Work = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex-col justify-center px-4 md:px-6">
-        <div className="text-4xl md:text-6xl font-tiny5 mt-6 mb-6 md:mt-12 md:mb-8 text-center font-bold text-slate-200">
+        <div className="text-4xl md:text-6xl font-tiny5 mt-6 mb-6 md:mt-24 md:mb-12 text-center font-bold text-slate-200">
           Work & Exp.
         </div>
-        {/* CRPTM | CRPTM is disbanded */}
-        {<WorkTemplate profile={"Backend Engineer Intern"} org={"CRPTM"} Location={"Gurugram"} mode={"On-Site"} start={"Sep, 2024"} end={"Feb, 2025"}
-        pointOne={"Worked on integrations with major crypto exchanges/blockchains including HitBTC, Bibox, and Gemini."}
-        pointTwo={"Designed and maintained JUnit test cases for taxation, transaction validation, and integration modules."}
-        pointThree={"Designed and implemented taxation computation logics for cryptocurrency trades and crypto transactions."}
-        ></WorkTemplate>}
-        {/* Aonflow */}
-        {
-          <WorkTemplate
-            profile={"Backend Engineer"}
-            org={"Aonflow"}
-            Location={"Gurugram"}
-            mode={"On-Site"}
-            start={"Mar, 2025"}
-            end={"Jan, 2026"}
-            pointOne={
-              "Engineered and maintained backend functionality for Aonflow, an iPaaS (integration platform as a service)."
-            }
-            pointTwo={
-              "Integrated many CRM and ERP apps like Odoo, Quickbooks, Shopify and Twilio. Including connectors with auth, rest apis and many other customization from scratch."
-            }
-            pointThree={
-              "Worked on different app and flow router apis, and contributed by resolving various bugs."
-            }
-          ></WorkTemplate>
-        }
+        <div className="flex flex-col gap-y-6 md:gap-y-10">
+          {/* CRPTM | CRPTM is disbanded */}
+          {<WorkTemplate profile={"Backend Engineer Intern"} org={"CRPTM"} Location={"Gurugram"} mode={"On-Site"} start={"Sep, 2024"} end={"Feb, 2025"}
+          pointOne={"Worked on integrations with major crypto exchanges/blockchains including HitBTC, Bibox, and Gemini."}
+          pointTwo={"Designed and maintained JUnit test cases for taxation, transaction validation, and integration modules."}
+          pointThree={"Designed and implemented taxation computation logics for cryptocurrency trades and crypto transactions."}
+          ></WorkTemplate>}
+          {/* Aonflow */}
+          {
+            <WorkTemplate
+              profile={"Backend Engineer"}
+              org={"Aonflow"}
+              Location={"Gurugram"}
+              mode={"On-Site"}
+              start={"Mar, 2025"}
+              end={"Jan, 2026"}
+              pointOne={
+                "Engineered and maintained backend functionality for Aonflow, an iPaaS (integration platform as a service)."
+              }
+              pointTwo={
+                "Integrated many CRM and ERP apps like Odoo, Quickbooks, Shopify and Twilio. Including connectors with auth, rest apis and many other customization from scratch."
+              }
+              pointThree={
+                "Worked on different app and flow router apis, and contributed by resolving various bugs."
+              }
+            ></WorkTemplate>
+          }
+        </div>
       </div>
     </div>
   );
@@ -55,7 +57,7 @@ const WorkTemplate = ({
   const ref = React.useRef(null);
   const isInView = useInView(ref);
   return (
-    <div className="flex flex-row justify-center my-5 items-center">
+    <div className="flex flex-row justify-center items-center">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 0, scale: 0.5 }}
