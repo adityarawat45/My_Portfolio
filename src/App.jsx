@@ -14,12 +14,12 @@ function App() {
       <div className="fixed inset-0 -z-20">
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-950" />
         <div
-          className="absolute inset-0 opacity-[0.14]"
+          className="absolute inset-0 opacity-[0.28]"
           style={{
             backgroundImage:
-              "radial-gradient(circle, rgba(255,255,255,0.45) 1px, transparent 1px)",
+              "radial-gradient(circle, rgba(255,255,255,0.75) 1px, transparent 1px)",
             backgroundSize: "24px 24px",
-          }} 
+          }}
         />
       </div>
 
