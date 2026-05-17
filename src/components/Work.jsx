@@ -9,29 +9,35 @@ const Work = () => {
           Work & Exp.
         </div>
         <div className="flex flex-col gap-y-6 md:gap-y-10">
-          {/* CRPTM | CRPTM is disbanded */}
-          {<WorkTemplate profile={"Backend Engineer Intern"} org={"CRPTM"} Location={"Gurugram"} mode={"On-Site"} start={"Sep, 2024"} end={"Feb, 2025"}
-          pointOne={"Worked on integrations with major crypto exchanges/blockchains including HitBTC, Bibox, and Gemini."}
-          pointTwo={"Designed and maintained JUnit test cases for taxation, transaction validation, and integration modules."}
-          pointThree={"Designed and implemented taxation computation logics for cryptocurrency trades and crypto transactions."}
+          {/* CRPTM */}
+          {<WorkTemplate profile={"Full-Stack Developer Intern"} org={"CRPTM"} Location={"Gurugram"} mode={"On-Site"} start={"Sep, 2024"} end={"Feb, 2025"}
+          pointOne={"Resolved frontend and backend production bugs across core platform modules, improving application stability and user experience."}
+          pointTwo={"Debugged and fixed authentication and integration issues related to Bibox and Gemini."}
+          pointThree={"Implemented taxation logic and improved overall transaction processing based on business requirements for calculating taxations."}
           ></WorkTemplate>}
-          {/* Aonflow */}
+          {/* Aonflow Intern */}
+          {<WorkTemplate profile={"Backend Engineer Intern"} org={"Aonflow"} Location={"Gurugram"} mode={"On-Site"} start={"Mar, 2025"} end={"Sep, 2025"}
+          pointOne={"Built Odoo connector modules from scratch to handle bidirectional data flow and automated synchronization."}
+          pointTwo={"Implemented sync reconciliation logic to detect and remove stale entities during refresh cycles, ensuring database consistency with external application data."}
+          pointThree={"Monitored and optimized high-latency APIs across multiple workflows, reducing average response time by approximately 40% and improving overall platform performance."}
+          ></WorkTemplate>}
+          {/* Aonflow Backend Engineer */}
           {
             <WorkTemplate
               profile={"Backend Engineer"}
               org={"Aonflow"}
               Location={"Gurugram"}
               mode={"On-Site"}
-              start={"Mar, 2025"}
+              start={"Oct, 2025"}
               end={"Jan, 2026"}
               pointOne={
-                "Engineered and maintained backend functionality for Aonflow, an iPaaS (integration platform as a service)."
+                "Developed and maintained Shopify connector integrations for fetching, processing, and synchronizing store data using GraphQL APIs."
               }
               pointTwo={
-                "Integrated many CRM and ERP apps like Odoo, Quickbooks, Shopify and Twilio. Including connectors with auth, rest apis and many other customization from scratch."
+                "Built a web scraper to fetch and process QuickBooks entities, reducing metadata dependency usage and improving entity load times by 40%."
               }
               pointThree={
-                "Worked on different app and flow router apis, and contributed by resolving various bugs."
+                "Optimized entity synchronization time by replacing nested iteration logic with hash-based lookups, reducing time complexity from O(n²) to O(n) and significantly improving performance."
               }
             ></WorkTemplate>
           }

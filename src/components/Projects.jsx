@@ -12,9 +12,9 @@ const Projects = () => {
       <div className="flex flex-wrap px-2 md:px-20 justify-center mb-5 gap-y-4 md:gap-y-0">
         {/* All Projects */}
         <ProjectCard 
-          title="Blog Nest" 
+          title="Blogster" 
           desc="A modern, sleek blogging platform based on serverless architecture, designed to turn your thoughts into captivating posts effortlessly." 
-          link="https://blognest-beta.vercel.app/" 
+          link="https://blogsterz.vercel.app/" 
           stack="Typescript, React, Hono, Prisma, Cloudflare, Postgresql, Tailwindcss, Recoil" 
           icon={<FaGlobe />} 
         />
@@ -28,7 +28,7 @@ const Projects = () => {
         <ProjectCard 
           title="My Portfolio" 
           desc="A Meticulously crafted Portfolio by me to reflect my journey as a developer, offering visitors a glimpse into my development style and capabilities." 
-          link="https://devxaditya.vercel.app/" 
+          link="https://www.adityaxyz.in/" 
           stack="Javascript, React, Tailwindcss, Framer Motion" 
           icon={<FaGlobe />} 
         />
