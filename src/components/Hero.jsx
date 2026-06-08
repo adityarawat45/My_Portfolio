@@ -174,8 +174,8 @@ const Hero = () => {
             </motion.div>
           </a>
           <a
-            href="/Aditya_Rawat.pdf"
-            download={"Aditya_Rawat.pdf"}
+            href="Aditya_Rawat.pdf"
+            download="Aditya_Rawat.pdf"
             className="hidden md:block "
           >
             <button className=" rounded-2xl text-xl md:text-lg border-2 mb-2 border-dashed border-gray-900 bg-slate-500 px-3 py-1 font-semibold uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
@@ -185,8 +185,8 @@ const Hero = () => {
         </div>
         <div className="flex justify-center mt-4 items-center">
           <a
-            href="/Aditya_Rawat.pdf"
-            download={"Aditya_Rawat.pdf"}
+            href="Aditya_Rawat.pdf"
+            download="Aditya_Rawat.pdf"
             className="block text-base md:hidden lg:hidden "
           >
             <button className=" rounded-2xl border-2 border-dashed border-gray-900 bg-slate-500 px-2 py-1 font-semibold text-md uppercase text-gray-900 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_rgb(168,106,55)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
